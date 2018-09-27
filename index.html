@@ -9,11 +9,9 @@
 	<header class="page-header main-page">
 		<nav class="main-nav">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
-			<a class="page-header__logo">
-				<img class="page-header__logo-image" src="img/logotype-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
-			</a>
 			<ul class="main-nav__list site-list">
-				<li class="site-list__item">					
+				<li class="site-list__item site-list__item--logo">
+					<span class="visually-hidden">Логотип Pink</span>					
 				</li>
 				<li class="site-list__item site-list__item--active">
 					<a>Главная</a>
@@ -39,13 +37,19 @@
 				<a class="download-block__button button" href="https://www.apple.com/lae/itunes/">Скачать приложение</a>
 				<ul class="download-block__list os-list">
 					<li class="os-list__item">
-						<img class="os-list__image" src="img/logo-apple.png" alt="Логотип Apple" width="47" height="56">	
+						<a class="os-list__link os-list__link--ios" href="https://www.apple.com/lae/itunes/">
+							<span class="visually-hidden os-list__description">Приложение для iPhone</span>
+						</a>
 					</li>
 					<li class="os-list__item">
-						<img class="os-list__image" src="img/logo-android.png" alt="Логотип Android" width="43" height="47">	
+						<a class="os-list__link os-list__link--android" href="https://www.apple.com/lae/itunes/">
+							<span class="visually-hidden os-list__description">Приложение для Android</span>
+						</a>
 					</li>
 					<li class="os-list__item">
-						<img class="os-list__image" src="img/logo-windows.png" alt="Логотип Windows" width="44" height="41">	
+						<a class="os-list__link os-list__link--windows" href="https://www.apple.com/lae/itunes/">
+							<span class="visually-hidden os-list__description">Приложение для Windows Phone</span>
+						</a>
 					</li>
 				</ul>
 				<p class="download-block__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
