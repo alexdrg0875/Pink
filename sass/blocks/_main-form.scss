@@ -1,0 +1,70 @@
+.main-form__description {
+  line-height: 30px;
+}
+
+.full-name__label,
+.visitor-contacts__label,
+.visitor-gadget__legend,
+.visitor-emotions__legend {
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.full-name__input,
+.visitor-contacts__input,
+.visitor-emotions__textarea {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $bgray;
+}
+
+.achievements__legend {
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.achievements__label,
+.visitor-gadget__input {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.main-form__button {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  background-color: #2aab6d;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.main-form__button--disabled {
+  &,
+  &:hover,
+  &:focus,
+  &:active{
+  color: #ffffff;
+  background-color: #e5e5e5;
+  }
+}
+
+.main-form__required {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-form__required-colored {
+  color: $pink;
+}
+
+

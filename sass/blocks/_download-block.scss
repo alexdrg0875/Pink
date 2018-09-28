@@ -1,0 +1,33 @@
+.download-block {
+  background-color: #283645;
+}
+
+.download-block__title {
+  font-weight: lighter;
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.download-block__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: #f1becc;
+    background-color: #ffffff;
+  }
+}
+
+.download-block__description {
+  font-weight: lighter;
+  text-align: center;
+  color: #ffffff;
+}

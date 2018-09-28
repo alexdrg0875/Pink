@@ -2,28 +2,30 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Pink - Взгляните на жизнь иначе!</title>
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 	<header class="page-header main-page">
 		<nav class="main-nav">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item site-list__item--logo">
-					<span class="visually-hidden">Логотип Pink</span>					
+			<ul class="main-nav__list nav-list">
+				<li class="nav-list__item nav-list__item--logo">
+					<span class="visually-hidden">Логотип Pink</span>
 				</li>
-				<li class="site-list__item site-list__item--active">
-					<a>Главная</a>
+				<li class="nav-list__item nav-list__item--active">
+					<a class="nav-list__link">Главная</a>
 				</li>
-				<li class="site-list__item">
-					<a href="photo.html">Фотографии</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="photo.html">Фотографии</a>
 				</li>
-				<li class="site-list__item">
-					<a href="form.html">Конкурс</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="form.html">Конкурс</a>
 				</li>
-				<li class="site-list__item">
-					<a href="https://htmlacademy.ru">HTML Academy</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="https://htmlacademy.ru">HTML Academy</a>
 				</li>
 			</ul>
 		</nav>
@@ -76,7 +78,7 @@
 						<p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 					</li>
 				</ul>
-				<ul class="advantages__list-images">	
+				<ul class="advantages__list-images">
 					<li class="advantages__item-image">
 						<img class="advantages__image" src="img/_____.png" alt="Пример исходного фото">
 					</li>
@@ -87,12 +89,12 @@
 						<img class="advantages__image" src="img/_____.png" alt="Пример обработанного фото со смайликом">
 					</li>
 				</ul>
-			</div>			
+			</div>
 			<div class="advantages__additional-item">
 					<img class="advantages__additional-image" src="img/_____.png" alt="Изображение часов">
 					<h2 class="advantages__additional-slogan">Эффект на 24 часа!</h2>
 					<p class="advantages__additional-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-					<a class="advantages__additional-link" href="#">Узнать больше об исследовании</a>				
+					<a class="advantages__additional-link" href="#">Узнать больше об исследовании</a>
 			</div>
 		</section>
 
@@ -117,7 +119,7 @@
 						<p class="reviews__author-age">25 лет, водитель трамвая</p>
 					</blockquote>
 					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>	
+          <button class="reviews__next" type="button">Следующий отзыв</button>
 				</div>
 				<p class="reviews__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
@@ -130,11 +132,21 @@
 		<section class="price">
 			<h2 class="visually-hidden">Прайс-лист</h2>
 			<div class="price__wrapper slider">
-				<div class="price__list slider__list">
-					<img class="price__image price__image--left slider__item" src="img/___.png">
-					<img class="price__image price__image--center slider__item" src="img/___.png">
-					<img class="price__image price__image--right slider__item" src="img/___.png">
-				</div>
+				<ul class="price__list slider__list">
+          <li class="price__item price__item--head slider__item">
+            <p class="price__name">Стандарт</p>
+            <p class="price__value">3,99 USD</p>
+          </li>
+					<li class="price__item slider__item">
+            <p class="price__option price__option--checked">Розовый фильтр</p>
+          </li>
+          <li class="price__item slider__item">
+            <p class="price__option price__option--checked">Смайлики</p>
+          </li>
+          <li class="price__item slider__item">
+            <p class="price__option price__option--unchecked">Комментарии</p>
+          </li>
+				</ul>
 				<p class="price__toggles slider__toggles">
       	  <button class="slider__toggle" type="button">1</button>
       	  <button class="slider__toggle" type="button">2</button>
@@ -151,20 +163,20 @@
 						<b class="contacts__name">Звоните:</b>
 						<p class="contacts__text">+7 (812) 555-66-66</p>
 					</li>
-					<li class="contacts__item">
-						<b class="contacts__name">Приезжайте в гости:</b>
-						<p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
-					</li>
-					<li class="contacts__item">
-						<b class="contacts__name">Пишите:</b>
-						<a class="contacts_e-mail" href="#">mail@htmlacademy.ru</a>
-					</li>
+          <li class="contacts__item">
+            <b class="contacts__name">Пишите:</b>
+            <a class="contacts__text contacts__e-mail" href="#">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__name">Приезжайте в гости:</b>
+            <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+          </li>
 				</ul>
 			</div>
 			<div class="contacts__map">
 				<img class="contacts__map-image" src="img/map.jpg" width="1200" height="500" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
 			</div>
-		</section>		
+		</section>
 	</main>
 
 		<footer class="page-footer">

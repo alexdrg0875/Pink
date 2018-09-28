@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Pink - Фото галерея</title>
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,33 +14,33 @@
 			<a class="page-header__logo"  href="index.html">
 				<img class="page-header__logo-image" src="img/logotype-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
 			</a>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item">					
+			<ul class="main-nav__list nav-list">
+				<li class="nav-list__item">
 				</li>
-				<li class="site-list__item">
-					<a href="index.html">Главная</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="index.html">Главная</a>
 				</li>
-				<li class="site-list__item site-list__item--active">
-					<a>Фотографии</a>
+				<li class="nav-list__item nav-list__item--active">
+					<a class="nav-list__link nav-list__link--active">Фотографии</a>
 				</li>
-				<li class="site-list__item">
-					<a href="form.html">Конкурс</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="form.html">Конкурс</a>
 				</li>
-				<li class="site-list__item">
-					<a href="https://htmlacademy.ru">HTML Academy</a>
+				<li class="nav-list__item">
+					<a class="nav-list__link" href="https://htmlacademy.ru">HTML Academy</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="page-header__title">
-			<h1 class="page-header__text">Фотографии пользователей</h1>
+			<h1 class="page-header__text">Фотографии<br>пользователей</h1>
 		</div>
 	</header>
 
 	<main class="page-main">
-		<p class="main-form__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>		
 
-		<section class="photo-gallery">
-			<h2 class="visually-hidden">Галерея фотографий пользователей приложения Pink</h2>
+    <section class="photo-gallery">
+      <h2 class="visually-hidden">Галерея фотографий пользователей приложения Pink</h2>
+		  <p class="photo-gallery__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
 			<div class="photo-gallery__wrapper photo-day__wrapper">
 				<a class="photo-gallery__link" href="#">
 					<img class="photo-gallery__image photo-day__image" src="img/____.jpg" alt="Фото из галереи" width="320" height="140">
@@ -72,7 +74,7 @@
 			<div class="photo-gallery__wrapper">
 				<a class="photo-gallery__link" href="#">
 					<img class="photo-gallery__image" src="img/____.jpg" alt="Фото из галереи" width="280" height="180">
-				</a>	
+				</a>
 				<p class="photo-gallery__author-name">Борис<span class="photo-gallery__author-time">(20 часов назад)</span></p>
 				<p class="photo-gallery__author-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
 				<a class="photo-gallery__likes" href="#">
@@ -82,7 +84,7 @@
 			<div class="photo-gallery__wrapper">
 				<a class="photo-gallery__link" href="#">
 					<img class="photo-gallery__image" src="img/____.jpg" alt="Фото из галереи" width="280" height="180">
-				</a>	
+				</a>
 				<p class="photo-gallery__author-name">Сергей<span class="photo-gallery__author-time">(25 часов назад)</span></p>
 				<p class="photo-gallery__author-comment">Самая кубанская в мире!</p>
 				<a class="photo-gallery__likes" href="#">
@@ -100,7 +102,7 @@
 				</a>
 			</div>
 			<div class="photo-gallery__wrapper">
-				<a class="photo-gallery__link" href="#">	
+				<a class="photo-gallery__link" href="#">
 					<img class="photo-gallery__image" src="img/____.jpg" alt="Фото из галереи" width="280" height="180">
 				</a>
 				<p class="photo-gallery__author-name">Надежда<span class="photo-gallery__author-time">(45 часов назад)</span></p>
@@ -110,11 +112,11 @@
 				</a>
 			</div>
 		</section>
-		
+
 		<section class="photo-gallery__slogan">
 			<h2 class="visually-hidden">Слоган приложения Pink</h2>
 			<p class="photo-gallery__slogan-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-		</section>	
+		</section>
 
 		<section class="photo-gallery__upload upload">
 			<h2 class="visually-hidden">Форма загрузки личных фото на сайт</h2>
@@ -132,10 +134,10 @@
 							<input class="adjustments__contrast" type="range" name="contrast" value="60">
 						</li>
 					</ul>
-					<button class="upload__button button" type="button">Запостить</button>
-					<button class="upload__button button button--cancel" type="button">Отмена</button>
+					<a class="upload__button button" href="#">Запостить</button>
+					<a class="upload__button button upload__button--cancel" href="#">Отмена</button>
 				</fieldset>
-			</form>	
+			</form>
 		</section>
 	</main>
 

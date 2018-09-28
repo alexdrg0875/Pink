@@ -1,0 +1,56 @@
+.photo-gallery__description {
+  line-height: 30px;
+}
+
+.photo-gallery__author-name {
+  line-height: 30px;
+  font-weight: 700;
+ }
+
+.photo-gallery__author-time {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.photo-gallery__author-comment {
+}
+
+.photo-gallery__likes-count {
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.photo-gallery__slogan-text {
+  line-height: 30px;
+}
+
+.upload__button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #d22856;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: #d22856;
+  }
+}
+
+.upload__button--cancel {
+  color: rgba(#283645, 0.1);
+  &:hover,
+  &:focus {
+    color: rgba(#283645, 0.3);
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background-color: rgba(#283645, 0.3);
+  }
+}

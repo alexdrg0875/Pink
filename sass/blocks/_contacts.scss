@@ -1,0 +1,39 @@
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.contacts__item {
+  text-align: center;
+}
+
+.contacts__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: $pink;
+}
+
+.contacts__e-mail {
+  &:hover,
+  &:focus {
+    color: $bgray;
+    text-decoration: underline;
+  }
+  &:active {
+    color: rgba($bgray, 0.3);
+    text-decoration: none;
+  }
+}

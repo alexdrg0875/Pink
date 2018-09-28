@@ -1,0 +1,68 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "Pink - education project of intensive HTML Academy courses <level-2>",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.1.x",
+    "browser-sync": "2.24.x",
+    "del": "^3.0.0",
+    "gulp": "3.9.x",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.x",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
+    "normalize.scss": "^0.1.0",
+    "picturefill": "^3.0.2",
+    "posthtml-include": "^1.2.0",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^8.1.1",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svg4everybody": "^2.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdrg0875/pink.git"
+  },
+  "author": "Deryhlazov Oleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexdrg0875/pink/issues"
+  },
+  "homepage": "https://github.com/alexdrg0875/pink#readme"
+}
