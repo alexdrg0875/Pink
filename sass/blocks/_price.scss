@@ -1,22 +1,30 @@
+.price__wrapper {
+  background-color: #f2f2f2;
+}
+
 .price__list {
   margin: 0;
   padding: 0;
 }
 
 .price__name {
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
+
   background-color: $bgray;
 }
 
 .price__value {
+  font-weight: lighter;
   font-size: 24px;
   line-height: 30px;
-  font-weight: lighter;
+  text-align: center;
   color: #ffffff;
+
   background-color: $bgray;
 }
 

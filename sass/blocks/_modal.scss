@@ -1,0 +1,31 @@
+.modal {
+  padding: 45px 20px 50px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 700px;
+  color: #000000;
+  text-align: center;
+}
+
+.modal__description {
+  text-align: center;
+}
+
+.modal__button {
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+}

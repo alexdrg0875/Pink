@@ -1,8 +1,21 @@
-.download-block {
-  background-color: #283645;
+
+
+.download-block__banner {
+  min-height: 400px;
+
+  background-image: url(../img/iphone-hand-tablet@1x-min.webp);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.download-block__container {
+  padding: 30px 20px;
+  background-color: $bgray;
 }
 
 .download-block__title {
+  display: none;
+
   font-weight: lighter;
   font-size: 50px;
   line-height: 60px;
@@ -10,18 +23,17 @@
 }
 
 .download-block__button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
   color: #ffffff;
 
   &:hover,
   &:focus {
     color: $pink;
+
     background-color: #ffffff;
   }
   &:active {
     color: #f1becc;
+
     background-color: #ffffff;
   }
 }

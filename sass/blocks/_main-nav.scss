@@ -1,28 +1,39 @@
-.main-nav {
-
-}
-
 .nav-list {
   margin: 0;
   padding: 0;
+
+  background-color: $bgray;
 }
 
 .nav-list__item {
+  padding: 20px;
   text-align: center;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
 }
 
 .nav-list__link {
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 32px;
   color: #ffffff;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
   &:hover,
   &:focus {
-    color:$pink;
+    color: $pink;
   }
   &:active {
     color: rgba($pink, 0.3);
+  }
+}
+
+.nav-list__link--active {
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+  &:active {
+    color: #ffffff;
   }
 }

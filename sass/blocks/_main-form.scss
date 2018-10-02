@@ -1,44 +1,67 @@
 .main-form__description {
+  padding: 50px 20px;
   line-height: 30px;
+  text-align: center;
 }
 
-.full-name__label,
-.visitor-contacts__label,
-.visitor-gadget__legend,
-.visitor-emotions__legend {
-  line-height: 30px;
-  color: $pink;
-  text-transform: uppercase;
+.main-form__additional-description {
+  display: none;
 }
 
-.full-name__input,
-.visitor-contacts__input,
-.visitor-emotions__textarea {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $bgray;
+.main-form__form-block {
+  margin: 0;
+  padding: 20px;
+  border: 0;
 }
 
-.achievements__legend {
+.main-form__legend {
   line-height: 18px;
   color: $pink;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.achievements__label,
+.visitor-fname__label,
+.visitor-contacts__label {
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.visitor-fname__input,
+.visitor-contacts__input,
+.visitor-emotions__textarea {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $bgray;
+}
+
+.visitor-contacts__legend {
+  display: none;
+}
+
+.visitor-achievements {
+  background-color: #f2f2f2;
+}
+
+.visitor-gadget {
+  background-color: #f2f2f2;
+}
+
+.visitor-achievements__label,
 .visitor-gadget__input {
   font-size: 18px;
   line-height: 30px;
 }
 
 .main-form__button {
-  font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
   color: #ffffff;
-  border: none;
+
   background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
   &:hover,
   &:focus {
     background-color: #1c9b5e;
@@ -52,9 +75,10 @@
   &,
   &:hover,
   &:focus,
-  &:active{
-  color: #ffffff;
-  background-color: #e5e5e5;
+  &:active {
+    color: #ffffff;
+
+    background-color: #e5e5e5;
   }
 }
 

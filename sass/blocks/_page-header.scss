@@ -1,5 +1,10 @@
 .page-header {
+  width: 100%;
+
   background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-header__title {
@@ -7,8 +12,8 @@
 }
 
 .page-header__text {
+  font-weight: lighter;
   font-size: 24px;
   line-height: 30px;
-  font-weight: lighter;
   color: #ffffff;
 }
