@@ -37,3 +37,50 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    padding: 20px 0;
+    min-height: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-list {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 940px;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  .nav-list__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .nav-list__link--active {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .nav-list__item {
+    padding: 0;
+    border: none;
+    width: 150px;
+  }
+
+  .nav-list__item--logo {
+    width: 320px;
+  }
+
+}
