@@ -10,7 +10,7 @@
 
 .advantages__title {
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 30px;
   text-align: center;
 }
@@ -42,23 +42,6 @@
   display: none;
 }
 
-.advantages__additional-slogan {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-}
-
-.advantages__additional-description {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.advantages__additional-link {
-  font-size: 18px;
-  line-height: 30px;
-  color: $pink;
-}
 
 @media (min-width: $tablet-width) {
   .advantages {
@@ -95,7 +78,27 @@
   }
 
   .advantages__additional-item {
-    display: block;
+    display: flex;
+  }
+
+  .advantages__additional-text-wrapper {
+    padding: 10px;
+    width: 320px;
+  }
+
+  .advantages__additional-image {
+    margin: 0;
+  }
+
+  .advantages__additional-slogan {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  .advantages__additional-link {
+    color: $pink;
   }
 }
 
@@ -120,11 +123,54 @@
     width: 940px;
   }
 
-  .advantages__item-text {
+  .advantages__item {
     width: 300px;
   }
 
+  .advantages__item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+//    left: -40px;
+//    top: -1px;
+
+    width: 292px;
+    height: 302px;
+
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .advantages__item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+//    left: -40px;
+//    top: -1px;
+
+    width: 292px;
+    height: 302px;
+
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .advantages__item:nth-child(3)::before {
+    content: "";
+    position: absolute;
+//    left: -40px;
+//    top: -1px;
+
+    width: 292px;
+    height: 302px;
+
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
   .advantages__slogan {
+    margin-top: 360px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
@@ -140,9 +186,27 @@
     display: none;
   }
 
+  .advantages__additional-text-wrapper {
+    width: 600px;
+  }
+
   .advantages__additional-item {
-    display: block;
+    min-height: 450px;
     background-color: #f2f2f2;
+  }
+
+  .advantages__additional-slogan {
+    line-height: 30px;
+  }
+
+  .advantages__additional-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__additional-link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

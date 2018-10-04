@@ -44,6 +44,10 @@
   }
 }
 
+.contacts__map {
+  min-height: 200px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     margin: 0 auto;

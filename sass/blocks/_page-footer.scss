@@ -1,3 +1,26 @@
+.page-footer--main-page {
+  display: none;
+}
+
+.page-footer__logo {
+  margin: 0;
+}
+
 .copyright__text {
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer--main-page {
+    display: block;
+    min-height: 130px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 620px;
+  }
+
+
 }

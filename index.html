@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink - Взгляните на жизнь иначе!</title>
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -65,51 +66,57 @@
       <h2 class="advantages__title">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h2>
       <div class="advantages__wrapper">
         <ul class="advantages__list-text">
-          <li class="advantages__item-text">
+          <li class="advantages__item">
             <h3 class="advantages__slogan">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages__item-text">
+          <li class="advantages__item">
             <h3 class="advantages__slogan">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages__item-text">
+          <li class="advantages__item">
             <h3 class="advantages__slogan">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="advantages__item-image">
-        </div>
+        <p class="advantages__item-image">
+        </p>
       </div>
       <div class="advantages__additional-item">
-          <img class="advantages__additional-image" src="img/_____.png" alt="Изображение часов">
-          <h2 class="advantages__additional-slogan">Эффект на 24 часа!</h2>
-          <p class="advantages__additional-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="advantages__additional-link" href="#">Узнать больше об исследовании</a>
+          <p class="advantages__additional-image">
+            <include src="img/icon-timer.svg"></include>
+          </p>
+          <div class="advantages__additional-text-wrapper">
+            <h2 class="advantages__additional-slogan">Эффект на 24 часа!</h2>
+            <p class="advantages__additional-description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="advantages__additional-link" href="#">Узнать больше об исследовании</a>
+          </div>
       </div>
     </section>
 
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
-        <img class="reviews__image" src="img/_____.png" alt="Декоративный элемент">
+        <p class="reviews__image">
+          <include src="img/icon-quotes.svg"></include>
+        </p>
         <div class="reviews__list  slider__list">
-          <blockquote class="reviews__item  slider__item">
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <p class="reviews__author-name">Николай Петров</p>
-            <p class="reviews__author-age">25 лет, водитель трамвая</p>
-          </blockquote>
-          <blockquote class="reviews__item  slider__item">
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <p class="reviews__author-name">Николай Петров</p>
-            <p class="reviews__author-age">25 лет, водитель трамвая</p>
-          </blockquote>
-          <blockquote class="reviews__item  slider__item">
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <p class="reviews__author-name">Николай Петров</p>
-            <p class="reviews__author-age">25 лет, водитель трамвая</p>
-          </blockquote>
           <button class="reviews__button reviews__prev" type="button">Предыдущий отзыв</button>
+          <blockquote class="reviews__item reviews__item--current slider__item">
+            <p class="reviews__author-name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author-age">25 лет, водитель трамвая</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__author-name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author-age">25 лет, водитель трамвая</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__author-name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__author-age">25 лет, водитель трамвая</p>
+          </blockquote>
           <button class="reviews__button reviews__next" type="button">Следующий отзыв</button>
         </div>
         <p class="reviews__toggles slider__toggles">
@@ -167,16 +174,16 @@
         </ul>
       </div>
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/map.jpg" width="1200" height="500" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
+        <p class="contacts__map-wrapper">
+          <img class="contacts__map-image" src="img/bg-map-mobile@1x-min.png" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
       </div>
     </section>
   </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--main-page">
       <div class="page-footer__wrapper">
         <p class="page-footer__logo">
-          <svg>
-          </svg>
         </p>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -200,8 +207,7 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__image" href="https://htmlacademy.ru/intensive/htmlcss">
-            <svg>
-            </svg>
+            <include src="img/logo-htmlacademy.svg"></include>
           </a>
         </div>
       </div>
