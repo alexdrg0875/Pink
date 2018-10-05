@@ -1,5 +1,7 @@
 .contacts__wrapper {
+  margin: 0 auto;
   padding: 50px 20px 45px;
+  width: 280px;
   min-height: 410px;
 }
 
@@ -9,6 +11,7 @@
 }
 
 .contacts__title {
+  margin: 0;
   font-weight: lighter;
   font-size: 24px;
   line-height: 30px;
@@ -78,6 +81,7 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     margin: 0 auto;
+    padding: 70px 130px 20px;
     width: 940px;
   }
 
