@@ -35,6 +35,15 @@
   font-size: 18px;
   line-height: 30px;
   color: $bgray;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  &:hover {
+    border-color: $bgray;
+  }
+  &:focus,
+  &:active {
+    border-color: $pink;
+  }
 }
 
 .visitor-contacts__legend {
