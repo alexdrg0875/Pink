@@ -1,11 +1,27 @@
 .photo-gallery {
-  padding: 55px 20px;
-  background-color: #f2f2f2;
+
 }
 
 .photo-gallery__description {
+  margin: 0 auto;
+  width: 280px;
+  min-height: 185px;
   line-height: 30px;
   text-align: center;
+}
+
+.photo-gallery__main-wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.photo-gallery__item-wrapper {
+  width: 280px;
+  min-height: 320px;
+}
+
+.photo-gallery__wrapper-photo-day {
+  min-height: 330px;
 }
 
 .photo-gallery__author-name {
@@ -26,7 +42,9 @@
 }
 
 .photo-gallery__slogan {
-  padding: 50px 20px;
+  margin: 0 auto;
+  width: 280px;
+  min-height: 170px;
 }
 
 .photo-gallery__slogan-text {
@@ -35,36 +53,69 @@
 }
 
 .photo-gallery__upload {
-  padding: 20px;
   background-color: #f2f2f2;
+  min-height: 760px;
 }
 
-.upload__button {
-  color: #d22856;
-  &:hover,
-  &:focus {
-    color: #ffffff;
-
-    background-color: #d22856;
+@media (min-width: $tablet-width) {
+  .photo-gallery__description {
+    width: 620px;
+    min-height: 230px;
+    font-size: 18px;
   }
-  &:active {
-    color: rgba(#ffffff, 0.3);
 
-    background-color: #d22856;
+  .photo-gallery__main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  .photo-gallery__item-wrapper {
+    width: 300px;
+    min-height: 460px;
+  }
+
+  .photo-gallery__wrapper-photo-day {
+    width : 620px;
+    min-height: 635px;
+  }
+
+  .photo-gallery__slogan {
+    width: 620px;
+    min-height: 195px;
+  }
+
+  .photo-gallery__upload {
+    min-height: 515px;
   }
 }
 
-.upload__button--cancel {
-  color: rgba(#283645, 0.1);
-  &:hover,
-  &:focus {
-    color: rgba(#283645, 0.3);
 
-    background-color: #ffffff;
+@media (min-width: $desktop-width) {
+  .photo-gallery__description {
+    width: 940px;
+    min-height: 240px;
   }
-  &:active {
-    color: rgba(#ffffff, 0.3);
 
-    background-color: rgba(#283645, 0.3);
+  .photo-gallery__main-wrapper {
+    width: 940px;
+  }
+
+  .photo-gallery__item-wrapper {
+    min-height: 555px;
+  }
+
+  .photo-gallery__wrapper-photo-day {
+    width : 940px;
+    min-height: 600px;
+  }
+
+  .photo-gallery__slogan {
+    width: 940px;
+    min-height: 190px;
+  }
+
+  .photo-gallery__upload {
+
   }
 }
