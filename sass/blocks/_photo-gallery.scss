@@ -67,6 +67,7 @@
   .photo-gallery__main-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 620px;
   }
 
