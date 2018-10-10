@@ -2,25 +2,75 @@
   display: none;
 }
 
-.page-footer__logo {
-  margin: 0;
+.page-footer {
+  min-height: 280px;
 }
 
-.copyright__text {
+.page-footer__wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.page-footer__logo {
+  margin: 0 auto;
+  width: 150px;
+  min-height: 50px;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+  width: 180px;
+  min-height: 50px;
+}
+
+.page-footer__copyright-wrapper {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.page-footer__copyright-text {
   line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer--main-page {
     display: block;
+  }
+
+  .page-footer {
     min-height: 130px;
   }
 
   .page-footer__wrapper {
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
     width: 620px;
   }
 
+  .page-footer__logo {
+    margin: 0;
+  }
 
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__copyright-wrapper {
+    margin: 0;
+    width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-height: 225px;
+  }
+
+  .page-footer__wrapper {
+    width: 940px;
+  }
+
+  .page-footer__copyright-wrapper {
+    width: 155px;
+  }
 }
