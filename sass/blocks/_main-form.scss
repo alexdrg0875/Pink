@@ -33,56 +33,6 @@
   text-align: center;
 }
 
-.visitor-fname__label,
-.visitor-contacts__label {
-  line-height: 30px;
-  color: $pink;
-  text-transform: uppercase;
-}
-
-.visitor-fname__input,
-.visitor-contacts__input,
-.visitor-emotions__textarea {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: $bgray;
-  border: 2px solid #e5e5e5;
-  outline: none;
-  &:hover {
-    border-color: $bgray;
-  }
-  &:focus,
-  &:active {
-    border-color: $pink;
-  }
-}
-
-.visitor-contacts__legend {
-  display: none;
-}
-
-.visitor-achievements {
-  background-color: #f2f2f2;
-}
-
-.visitor-gadget {
-  background-color: #f2f2f2;
-}
-
-.visitor-achievements__label,
-.visitor-gadget__input {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.visitor-emotions__textarea {
-  display: block;
-  margin: 0 auto;
-  padding: 15px 20px;
-  width: 236px;
-}
-
 .main-form__button {
   line-height: 30px;
   color: #ffffff;
@@ -166,20 +116,6 @@
     width: auto;
   }
 
-  .visitor-achievements {
-    background-color: #ffffff;
-  }
-
-  .visitor-gadget {
-    background-color: #ffffff;
-  }
-
-  .visitor-emotions__textarea {
-    width: 456px;
-    height: 150px;
-    padding: 20px;
-  }
-
   .main-form__button-wrapper {
     display: flex;
     justify-content: space-between;
@@ -225,12 +161,6 @@
       width:431px;
       padding: 0;
     }
-  }
-
-  .visitor-emotions__textarea {
-    width: 776px;
-    height: 84px;
-    padding: 20px;
   }
 
   .main-form__button-wrapper {

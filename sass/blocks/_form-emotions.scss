@@ -1,0 +1,38 @@
+.form-emotions__textarea {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $bgray;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  &:hover {
+    border-color: $bgray;
+  }
+  &:focus,
+  &:active {
+    border-color: $pink;
+  }
+}
+
+.form-emotions__textarea {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 20px;
+  width: 236px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__textarea {
+    width: 456px;
+    height: 150px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__textarea {
+    width: 776px;
+    height: 84px;
+    padding: 20px;
+  }
+}

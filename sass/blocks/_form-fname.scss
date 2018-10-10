@@ -1,0 +1,27 @@
+.form-fname__label {
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.form-fname__input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $bgray;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  &:hover {
+    border-color: $bgray;
+  }
+  &:focus,
+  &:active {
+    border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+}
+
+@media (min-width: $desktop-width) {
+}

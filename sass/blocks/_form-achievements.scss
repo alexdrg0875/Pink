@@ -1,0 +1,17 @@
+.form-achievements {
+  background-color: #f2f2f2;
+}
+
+.form-achievements__label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-achievements {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+}
