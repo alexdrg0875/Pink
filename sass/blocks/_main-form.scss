@@ -136,6 +136,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-form {
+    margin: 0 auto;
+    width: 940px;
+  }
+
   .main-form__description {
     width: 770px;
     min-height: 50px;
@@ -152,12 +157,14 @@
 
     &:nth-child(1) {
       display: inline-block;
+      margin-left: 0;
       width:435px;
       padding: 0;
     }
 
     &:nth-child(4) {
       display: inline-block;
+      margin-right: 0;
       width:431px;
       padding: 0;
     }

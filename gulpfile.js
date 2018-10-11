@@ -23,7 +23,7 @@ var htmlmin = require('gulp-htmlmin');
 //config build
 
 gulp.task("build", function (done) {
-  run("clean", "sprite", "spriteSymbol", "style","normalize", "compress", "images", "webp", "html", "minify", "copy", done);
+  run("clean", "sprite", "spriteSymbol", "style", "normalize", "compress", "images", "webp", "js", "html", "minify", "copy", done);
 });
 
 //end config build
@@ -170,7 +170,14 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
+});
+
+gulp.task("js", function () {
+  return gulp.src("js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 });
 
 //end config post hmtl

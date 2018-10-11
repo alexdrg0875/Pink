@@ -10,19 +10,18 @@
 
 <body>
   <header class="page-header page-header--inner-page">
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <a class="main-nav__logo-link"  href="index.html">
-        <img class="main-nav__logo-image" src="img/logotype-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
-      </a>
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--logo">
+          <a class="main-nav__logo-link"  href="index.html">
+          </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link main-nav__link--active">Фотографии</a>
+          <a class="main-nav__link main-nav__link--active  ">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -177,6 +176,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
+
 </body>
 
 </html>
