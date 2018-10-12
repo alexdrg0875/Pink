@@ -14,7 +14,7 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--logo">
-          <a class="main-nav__logo-link"  href="index.html">
+          <a class="main-nav__link main-nav__logo-link"  href="index.html">
           </a>
         </li>
         <li class="main-nav__item">
@@ -136,8 +136,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__logo">
-        </p>
+        <a class="page-footer__logo" href="#">
+          <include src="img/logo-pink-footer.svg"></include>
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -157,12 +158,10 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright-wrapper">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-image" href="https://htmlacademy.ru/intensive/htmlcss">
-            <include src="img/logo-htmlacademy.svg"></include>
-          </a>
-        </div>
+          <include src="img/logo-htmlacademy.svg"></include>
+        </a>
       </div>
     </footer>
 

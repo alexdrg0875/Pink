@@ -14,7 +14,7 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--logo">
-          <a class="main-nav__logo-link">
+          <a class="main-nav__link main-nav__logo-link">
           </a>
         </li>
         <li class="main-nav__item main-nav__item--active">
@@ -39,20 +39,23 @@
       <div class="download-block__container">
         <h2 class="download-block__title">Взгляните на жизнь иначе!</h2>
         <a class="download-block__button button" href="https://www.apple.com/lae/itunes/">Скачать приложение</a>
-        <ul class="download-block__list os-list">
-          <li class="os-list__item">
-            <a class="os-list__link os-list__link--ios" href="https://www.apple.com/lae/itunes/">
-              <span class="visually-hidden os-list__description">Приложение для iPhone</span>
+        <ul class="download-block__list">
+          <li class="download-block__item">
+            <a class="download-block__link download-block__link--ios" href="https://www.apple.com/lae/itunes/">
+              <span class="visually-hidden">Приложение для iPhone</span>
+              <include src="img/logo-apple.svg"></include>
             </a>
           </li>
-          <li class="os-list__item">
-            <a class="os-list__link os-list__link--android" href="https://www.apple.com/lae/itunes/">
-              <span class="visually-hidden os-list__description">Приложение для Android</span>
+          <li class="download-block__item">
+            <a class="download-block__link download-block__link--android" href="https://www.apple.com/lae/itunes/">
+              <span class="visually-hidden">Приложение для Android</span>
+              <include src="img/logo-android.svg"></include>
             </a>
           </li>
-          <li class="os-list__item">
-            <a class="os-list__link os-list__link--windows" href="https://www.apple.com/lae/itunes/">
-              <span class="visually-hidden os-list__description">Приложение для Windows Phone</span>
+          <li class="download-block__item">
+            <a class="download-block__link download-block__link--windows" href="https://www.apple.com/lae/itunes/">
+              <span class="visually-hidden">Приложение для Windows Phone</span>
+              <include src="img/logo-microsoft.svg"></include>
             </a>
           </li>
         </ul>
@@ -188,8 +191,9 @@
 
     <footer class="page-footer page-footer--main-page">
       <div class="page-footer__wrapper">
-        <p class="page-footer__logo">
-        </p>
+        <a class="page-footer__logo" href="#">
+          <include src="img/logo-pink-footer.svg"></include>
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -203,18 +207,16 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="ssocial__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright-wrapper">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-image" href="https://htmlacademy.ru/intensive/htmlcss">
-            <include src="img/logo-htmlacademy.svg"></include>
-          </a>
-        </div>
+          <include src="img/logo-htmlacademy.svg"></include>
+        </a>
       </div>
     </footer>
 

@@ -8,8 +8,8 @@
 
 .download-block__container {
   padding: 30px 20px;
-  min-height: 270px;
-  background-color: $bgray;
+  min-height: 230px;
+  background-color: #1d2631;
 }
 
 .download-block__title {
@@ -17,6 +17,7 @@
 }
 
 .download-block__button {
+  margin-bottom: 30px;
   color: #ffffff;
 
   &:hover,
@@ -30,6 +31,46 @@
 
     background-color: #ffffff;
   }
+}
+
+.download-block__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 25px;
+  padding: 0;
+  width: 205px;
+  height: 60px;
+}
+
+.download-block__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-block__link {
+  margin-top: auto;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.download-block__link--ios {
+  width: 46px;
+  height: 57px;
+  //background-image: url("../img/logo-apple.svg");
+}
+
+.download-block__link--android {
+  width: 42px;
+  height: 48px;
+ // background-image: url("../img/logo-android.svg");
+  fill: #a4c639;
+}
+
+.download-block__link--windows {
+  width: 44px;
+  height: 42px;
+  //background-image: url("../img/logo-microsoft.svg");
 }
 
 .download-block__description {
@@ -74,9 +115,7 @@
 
 @media (min-width: $desktop-width) {
   .download-block {
-    display: flex;
     width: 940px;
-    margin: 0 auto;
   }
 
   .download-block__banner {
