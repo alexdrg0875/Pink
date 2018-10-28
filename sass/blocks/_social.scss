@@ -1,4 +1,32 @@
-.social__list {
+.social__list-noblock {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
+
+.social__link-noblock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  fill: $pink;
+
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $bgray;
+  }
+
+  &:active {
+    fill: rgba($pink, 0.3);
+    border-color: #e9ebec;
+  }
+}
+
+
 
